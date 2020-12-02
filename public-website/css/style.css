@@ -740,11 +740,11 @@ h3 {
     width: 100%;
 }
 
-.site-blocks-cover,
+/* .site-blocks-cover,
 .site-blocks-cover>.container>.row {
     min-height: 600px;
     height: calc(85vh);
-}
+} */
 
 .site-blocks-cover.inner-page-cover,
 .site-blocks-cover.inner-page-cover>.container>.row {
@@ -1191,6 +1191,7 @@ h3 {
 
 .header-text {
     padding-top: 5rem;
+    padding-bottom: 10rem;
 }
 
 
