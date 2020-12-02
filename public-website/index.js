@@ -64,20 +64,16 @@ const websiteHome = `
         <div class="site-blocks-cover overlay" style="background-image: url(public-website/images/recreatiegemak-headerimg.jpg);"
             data-aos="fade">
             <div class="container">
-                <div class="row">
-                    <div class="col-md-13" data-aos="fade-up" data-aos-delay="400">
-                        <div class="row header-text">
-                            <div class="col-md-6">
-                                <h1>OPTIMALE SERVICE, MEER OMZET & LAGERE KOSTEN</h1>
-                                <p>Recreatiegemak versterkt de gastvrijheidsbeleving in de verblijfsrecreatiesector.</p>
-                                <p>Met de webapp van Recreatiegemak maakt u het contact met uw gasten persoonlijker en
-                                    gemakkelijker. Waarmee u tijd & middelen bespaart, en zowel uw gasttevredenheid als
-                                    uw omzet verhoogt.
-                                </p>
-                                <p>Op basis van innovatieve en betrouwbare webtechnologie waarbij optimale gebruiksvriendelijkheid, flexibiliteit en real-time aanpasbaarheid van uw content centraal staan.
-                                </p>
-                            </div>
-                        </div>
+                <div class="row header-text">
+                    <div class="col-md-7" data-aos="fade-up" data-aos-delay="400">
+                    <h1>OPTIMALE SERVICE, MEER OMZET & LAGERE KOSTEN</h1>
+                    <p>Recreatiegemak versterkt de gastvrijheidsbeleving in de verblijfsrecreatiesector.</p>
+                    <p>Met de webapp van Recreatiegemak maakt u het contact met uw gasten persoonlijker en
+                        gemakkelijker. Waarmee u tijd & middelen bespaart, en zowel uw gasttevredenheid als
+                        uw omzet verhoogt.
+                    </p>
+                    <p>Op basis van innovatieve en betrouwbare webtechnologie waarbij optimale gebruiksvriendelijkheid, flexibiliteit en real-time aanpasbaarheid van uw content centraal staan.
+                    </p>
                     </div>
                 </div>
             </div>
