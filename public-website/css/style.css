@@ -141,36 +141,33 @@ h3 {
     outline: none;
     -webkit-box-shadow: none !important;
     box-shadow: none !important;
-    box-shadow: 5px 6px 10px #cccccc;
 }
 
 .btn.btn-primary {
-    background: #00a79d;
-    border-color: #00a79d;
+    background: linear-gradient(45deg, #00a79d, #2bb673);
+    border-color: transparent;
     color: #fff;
 }
 
 .btn.btn-primary:hover {
     background: #2bb673;
-    border-color: #2bb673;
+    border-color: transparent;
     color: #fff;
-    box-shadow: 5px 6px 10px #cccccc;
 }
 
 .btn.btn-primary.btn-black--hover:hover {
     background: #2bb673;
     color: #fff;
-    box-shadow: 5px 6px 10px #cccccc;
 }
 
 .btn-blue {
-    background: #00a79d !important;
-    border-color: #00a79d !important;
+    background: linear-gradient(45deg, #00a79d, #2bb673);
+    border-color: transparent!important;
 }
 
 .btn-blue:hover {
     background: #2bb673 !important;
-    border-color: #2bb673!important;
+    border-color: transparent !important;
     color: #fff;
 }
 
