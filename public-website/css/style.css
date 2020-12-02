@@ -771,6 +771,11 @@ h3 {
     line-height: 1.5;
     font-weight: 300;
 }
+@media (max-width: 991.98px) {
+    .site-blocks-cover p {
+        font-size: 1rem;
+    }
+}
 
 .site-blocks-cover .intro-text {
     font-size: 16px;
