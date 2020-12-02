@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 25.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 51.6 68.8" style="enable-background:new 0 0 51.6 68.8;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:url(#map-marker-alt-solid_1_);}
+</style>
+<linearGradient id="map-marker-alt-solid_1_" gradientUnits="userSpaceOnUse" x1="0" y1="34.3914" x2="51.6" y2="34.3914">
+	<stop  offset="0" style="stop-color:#00A69C"/>
+	<stop  offset="1" style="stop-color:#29B473"/>
+</linearGradient>
+<path id="map-marker-alt-solid" class="st0" d="M23.1,67.4C3.6,39.1,0,36.2,0,25.8C0,11.6,11.6,0,25.8,0s25.8,11.6,25.8,25.8
+	c0,10.4-3.6,13.3-23.1,41.6c-1,1.5-3,1.8-4.5,0.8C23.6,68,23.4,67.7,23.1,67.4L23.1,67.4z M25.8,36.5c5.9,0,10.8-4.8,10.8-10.8
+	S31.7,15,25.8,15S15,19.8,15,25.8l0,0C15.1,31.7,19.9,36.5,25.8,36.5z"/>
+</svg>

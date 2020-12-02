@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Recreatiegemak</title>
+    <link rel="icon" href="./public-website/images/favicon.png">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:400, 600,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="public-website/css/bootstrap.min.css">
+    <link rel="stylesheet" href="public-website/css/jquery-ui.css">
+    <link rel="stylesheet" href="public-website/css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="public-website/css/aos.css">
+    <link rel="stylesheet" href="public-website/css/style.css">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-147183184-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'UA-147183184-1');
+    </script>
+     <style>
+        .was-validated .form-control:invalid{
+            border-color:red !important;
+        }
+    </style>
+</head>
+
+<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+    <div class="site-wrap">
+        <div class="site-mobile-menu site-navbar-target">
+            <div class="site-mobile-menu-header">
+                <div class="site-mobile-menu-close mt-3"> <span class="js-menu-toggle"> <i class="fa fa-times fa-xs"></i></span>
+            </div>
+            </div>
+            <div class="site-mobile-menu-body"></div>
+        </div>
+        <div class="top-bar py-3 top-bg">
+            <div class="container">
+                <div class="row">
+                    <div class="col-8 text-left">
+                        <ul class="social-media">
+                            <li>
+                                <a href="https://www.facebook.com/Atencionapp" class="p-2" target="_blank"><img src="./public-website/images/facebook.svg" alt="Facebook"></a>
+                            </li>
+                            <li>
+                                <a href="https://twitter.com/atencionapp" class="p-2" target="_blank"><img src="./public-website/images/twitter.svg" alt="Twitter"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <header class="site-navbar py-4 bg-white js-sticky-header site-navbar-target" role="banner">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-6 col-xl-2">
+                        <a class="mb-0 site-logo" href="index.html"><img src="./public-website/images/logo.svg" alt=""></a>
+                    </div>
+                    <div class="col-12 col-md-10 d-none d-xl-block">
+                        <nav class="site-navigation position-relative text-right" role="navigation">
+                            <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block ">
+                                <li><a href="index.html" class="nav-link">Home</a>
+                                </li>
+                                <li class="nav-link has-children">
+                                    <a href="producten.html">Producten</a>
+                                    <ul class="dropdown">
+                                        <li><a href="webapp.html" class="nav-link">Webapp</a></li>
+                                        <li><a href="cms-portal.html" class="nav-link">CMS-portal</a></li>
+                                        <li><a href="gebruikskosten.html" class="nav-link">Gebruikskosten</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="over-recreatiegemak.html" class="nav-link">Over Recreatiegemak</a></li>
+                                <li><a href="ervaringen.html" class="nav-link">Ervaringen</a></li>
+                                <li><a href="klant-worden.html" class="nav-link active-link">Klant worden</a></li>
+                                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="col-6 d-inline-block d-xl-none ml-md-0 py-3" style="position: relative; top: 3px;">
+                        <a href="#" class="site-menu-toggle js-menu-toggle text-black float-right"><i
+                                class="fa fa-bars fa-lg"> </i></a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!--- Klant worden -->
+        <section class="inner-site-section bg-light">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h4 class="mb-5">Hebt u interesse om klant te worden bij Recreatiegemak? Vul dan onderstaand formulier in; wij nemen spoedig contact met uw op.</h4>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <form id="form" novalidate onsubmit="event.preventDefault(); submitContactForm()">
+                            <div class="row form-group">
+                                <div class="col-md-12">
+                                    <label class="text-black" for="name">Naam</label>
+                                    <input type="text" id="name" class="form-control" required>
+                                    <span class="invalid-feedback">Voer uw naam in</span>
+                                </div>
+                            </div>
+                            <div class="row form-group">
+                                <div class="col-md-12">
+                                    <label class="text-black" for="companyName">Bedrijfsnaam</label>
+                                    <input type="text" id="companyName" class="form-control" required>
+                                    <span class="invalid-feedback">Voer uw bedrijfsnaam in</span>
+                                </div>
+                            </div>
+                            <div class="row form-group">
+                                <div class="col-md-6 mb-3 mb-md-0">
+                                    <label class="text-black" for="email">E-mailadres</label>
+                                    <input type="email" id="email" class="form-control" required>
+                                    <span class="invalid-feedback">Voer uw e-mailadres in</span>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="text-black" for="telephone">Telefoonnummer</label>
+                                    <input type="text" pattern="[0-9]+" minlength="10" maxlength="10" id="telephone" class="form-control" required>
+                                    <span class="invalid-feedback">Voer uw telefoonnummer in (10 cijfers)</span>
+                                </div>
+                            </div>
+                            <div class="row form-group mb-5">
+                                <div class="col-md-12">
+                                    <label class="text-black" for="message">Opmerkingen</label>
+                                    <textarea name="message" id="message" cols="30" rows="7" class="form-control" required></textarea>
+                                    <span class="invalid-feedback">Voer uw opmerking(en) of vraag in</span>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <input type="submit" id="submitBtn" value="Verzenden"
+                                        class="btn btn-primary btn-md text-white">
+                                    <p class="text-blue mt-5 font-weight-bold d-none" id="success-msg">Dank voor uw bericht. We reageren zo spoedig mogelijk.</p>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--- Footer -->
+        <footer class="site-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="row">
+                            <div class="col-md-6 col-lg-3 mb-lg-0 mb-3">
+                                <div class="row mb-3">
+                                    <div class="col-12">
+                                        <a class="site-logo" href="index.html"><img src="./public-website/images/logo.svg" alt=""></a>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12">
+                                        <ul style="list-style: none; padding-left: 0">
+                                            <li> <img src="./public-website/images/phone.svg" class="pr-3 phone">085 130 4537</li>
+                                            <li><img src="./public-website/images/envelop.svg" class="pr-3 envelope">info@recreatiegemak.nl</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-3 mb-5 mb-lg-0">
+                                <h2 class="footer-heading mb-4">Sociale media</h2>
+                                <div class="mb-2"> <a href="https://www.facebook.com/Atencionapp" target="_blank"><img src="./public-website/images/fb.svg"
+                                    alt="Facebook" class="pr-3 fb">Facebook</br></a> </div>
+                                    <div class="mb-2">  <a href="https://twitter.com/atencionapp" target="_blank"><img src="./public-website/images/twitter.svg" alt="Twitter" class="pr-3 tw">Twitter</br></a></div>
+                            </div>
+                            <div class="col-md-6 col-lg-3 mb-lg-0">
+                                <h2 class="footer-heading mb-4">Voorwaarden</h2>
+                                <ul class="list-unstyled">
+                                    <li><a href="https://s3.eu-central-1.amazonaws.com/live.atencion.nl/voorwaarden/Algemene_Voorwaarden_Atencion.pdf"><i class="fa fa-chevron-right"> </i> Algemene Voorwaarden</a></li>
+                                    <li><a href="https://s3.eu-central-1.amazonaws.com/live.atencion.nl/voorwaarden/Gebruiksvoorwaarden_Atencion.pdf"><i class="fa fa-chevron-right"> </i> Gebruiksvoorwaarden</a></li>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-5 text-center">
+                    <div class="col-md-12">
+                        <div class="border-top pt-5">
+                            <p>Copyright &copy; <script>document.write(new Date().getFullYear());</script> Recreatiegemak</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!-- .site-wrap -->
+    <script src="public-website/js/jquery-3.3.1.min.js"></script>
+    <script src="public-website/js/jquery-migrate-3.0.1.min.js"></script>
+    <script src="public-website/js/jquery-ui.js"></script>
+    <script src="public-website/js/popper.min.js"></script>
+    <script src="public-website/js/bootstrap.min.js"></script>
+    <script src="public-website/js/owl.carousel.min.js"></script>
+    <script src="public-website/js/jquery.stellar.min.js"></script>
+    <script src="public-website/js/jquery.countdown.min.js"></script>
+    <script src="public-website/js/bootstrap-datepicker.min.js"></script>
+    <script src="public-website/js/jquery.easing.1.3.js"></script>
+    <script src="public-website/js/aos.js"></script>
+    <script src="public-website/js/jquery.fancybox.min.js"></script>
+    <script src="public-website/js/jquery.sticky.js"></script>
+    <script src="public-website/js/main.js"></script>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script src="public-website/js/index.js"></script>
+    <script>
+        // function submitContactForm() {
+        //     $('#submitBtn').prop('disabled', true);
+        //     const data = {
+        //         name: $('#name').val(),
+        //         companyName: $('#companyName').val(),
+        //         email: $('#email').val(),
+        //         telephone: $('#telephone').val(),
+        //         message: $('#message').val()
+        //     };
+        //     $.ajax({
+        //         url: 'https://k8uwb1le89.execute-api.eu-central-1.amazonaws.com/test/send-email',
+        //         type: 'POST',
+        //         data: JSON.stringify(data),
+        //         success: (response) => {
+        //             $('#form').trigger("reset");
+        //             $('#submitBtn').prop('disabled', false);
+        //             $('#success-msg').removeClass('d-none');
+        //         }
+        //     })
+        // }
+        function submitContactForm() {
+            const form = document.getElementById("form");
+            form.classList.add("was-validated");
+            if (!form.checkValidity()) {
+                return false;
+            }
+            $('#submitBtn').prop('disabled', true);
+            const data = {
+                name: $('#name').val(),
+                companyName: $('#companyName').val(),
+                email: $('#email').val(),
+                telephone: $('#telephone').val(),
+                message: $('#message').val()
+            };
+            $.ajax({
+                url: ' https://k8uwb1le89.execute-api.eu-central-1.amazonaws.com/test/send-email',
+                type: 'POST',
+                data: JSON.stringify(data),
+                success: (response) => {
+                    $('#form').trigger("reset");
+                    $('#submitBtn').prop('disabled', false);
+                    $('#success-msg').removeClass('d-none');
+                }
+            })
+        }
+    </script>
+</body>
+
+</html>
