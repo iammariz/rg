@@ -210,7 +210,7 @@ const websiteHome = `
             </div>
         </section>
         <!--- Waarom Recreatiegemak? -->
-        <section class="site-section greenbg">
+        <section class="site-section greenbg pb-5">
             <div class="container">
                 <div class="row">
                     <div class="col-12">
@@ -229,7 +229,7 @@ const websiteHome = `
                                     IT maar de 'business' ons uitgangspunt.
                                 </p>
                             </li>
-                            <li>
+                            <li class="mb-4">
                                 <h4>Continue innovatie </h4>
                                 <p class="font-weight-bold">Goed kan (en moet) altijd nog beter. Verbeteren en
                                     vernieuwen zit in de genen van Recreatiegemak.</p>
@@ -256,7 +256,7 @@ const websiteHome = `
                                     Zodat we uw investering waard zijn & waard blijven.
                                 </p>
                             </li>
-                            <li>
+                            <li class="mb-4">
                                 <h4>Innovatieve technologie</h4>
                                 <p class="font-weight-bold">In onze producten maken we alleen gebruik van bewezen &
                                     moderne technologie&euml;n.</p>
