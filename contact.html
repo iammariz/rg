@@ -14,12 +14,12 @@
     <link rel="stylesheet" href="public-website/css/aos.css">
     <link rel="stylesheet" href="public-website/css/style.css">
     <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-147183184-1"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-X5GY1L38PN"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
-        gtag('config', 'UA-147183184-1');
+        gtag('config', 'G-X5GY1L38PN');
     </script>
     <style>
         .was-validated .form-control:invalid{
@@ -42,10 +42,10 @@
                     <div class="col-8 text-left">
                         <ul class="social-media">
                             <li>
-                                <a href="https://www.facebook.com/Atencionapp" class="p-2" target="_blank"><img src="./public-website/images/facebook.svg" alt="Facebook"></a>
+                                <a href="https://www.facebook.com/recreatiegemak" class="p-2" target="_blank"><img src="./public-website/images/facebook.svg" alt="Facebook"></a>
                             </li>
                             <li>
-                                <a href="https://twitter.com/atencionapp" class="p-2" target="_blank"><img src="./public-website/images/twitter.svg" alt="Twitter"></a>
+                                <a href="https://twitter.com/recreatiegemak" class="p-2" target="_blank"><img src="./public-website/images/twitter.svg" alt="Twitter"></a>
                             </li>
                         </ul>
                     </div>
@@ -84,7 +84,7 @@
             </div>
         </header>
         <!--- Contact -->
-        <section class="inner-site-section bg-light contact">
+        <section id="page-parent" class="inner-site-section bg-light contact">
             <div class="container">
                 <div class="row mb-5">
                     <div class="col-12">
@@ -141,10 +141,19 @@
                                 <div class="col-md-12">
                                     <input type="submit" id="submitBtn" value="Verzenden"
                                         class="btn btn-primary btn-md text-white">
-                                    <p class="text-blue mt-5 font-weight-bold d-none" id="success-msg">Dank voor uw bericht. We reageren zo spoedig mogelijk.</p>
                                 </div>
                             </div>
                         </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--- Form success -->
+        <section id="success-message-parent" class="inner-site-section bg-white contact d-none">
+            <div class="container">
+                <div class="row mb-5">
+                    <div class="col-md-12 text-left">
+                        <p class="text-blue font-weight-bold" id="success-msg">Dank voor uw bericht. We reageren zo spoedig mogelijk.</p>
                     </div>
                 </div>
             </div>
@@ -172,17 +181,15 @@
                             </div>
                             <div class="col-md-6 col-lg-3 mb-5 mb-lg-0">
                                 <h2 class="footer-heading mb-4">Sociale media</h2>
-                                <div class="mb-2"> <a href="https://www.facebook.com/Atencionapp" target="_blank"><img src="./public-website/images/fb.svg"
+                                <div class="mb-2"> <a href="https://www.facebook.com/recreatiegemak" target="_blank"><img src="./public-website/images/fb.svg"
                                     alt="Facebook" class="pr-3 fb">Facebook</br></a> </div>
-                                    <div class="mb-2">  <a href="https://twitter.com/atencionapp" target="_blank"><img src="./public-website/images/twitter.svg" alt="Twitter" class="pr-3 tw">Twitter</br></a></div>
+                                    <div class="mb-2">  <a href="https://twitter.com/recreatiegemak" target="_blank"><img src="./public-website/images/twitter.svg" alt="Twitter" class="pr-3 tw">Twitter</br></a></div>
                             </div>
                             <div class="col-md-6 col-lg-3 mb-lg-0">
                                 <h2 class="footer-heading mb-4">Voorwaarden</h2>
                                 <ul class="list-unstyled">
-                                    <li><a href="https://s3.eu-central-1.amazonaws.com/live.atencion.nl/voorwaarden/Algemene_Voorwaarden_Atencion.pdf"><i class="fa fa-chevron-right"> </i> Algemene Voorwaarden</a>
-                                    </li>
-                                    <li><a href="https://s3.eu-central-1.amazonaws.com/live.atencion.nl/voorwaarden/Gebruiksvoorwaarden_Atencion.pdf"><i class="fa fa-chevron-right"> </i> Gebruiksvoorwaarden</a>
-                                    </li>
+                                    <li><a href="https://s3.eu-central-1.amazonaws.com/live.atencion.nl/voorwaarden/Algemene_Voorwaarden_Atencion.pdf"><i class="fa fa-chevron-right"> </i> Algemene Voorwaarden</a></li>
+                                    <li><a href="https://s3.eu-central-1.amazonaws.com/live.atencion.nl/voorwaarden/Gebruiksvoorwaarden_Atencion.pdf"><i class="fa fa-chevron-right"> </i> Gebruiksvoorwaarden</a></li>
                             </div>
                         </div>
                     </div>
@@ -232,26 +239,22 @@
                 url: ' https://k8uwb1le89.execute-api.eu-central-1.amazonaws.com/test/send-email',
                 type: 'POST',
                 data: JSON.stringify(data),
-                success: (response) => {
-                    $('#form').trigger("reset");
-                    $('#submitBtn').prop('disabled', false);
-                    $('#success-msg').removeClass('d-none');
-                }
+                error:()=>onError(),
+                success:()=>onSuccess()
             })
         }
-        // function getLang()
-        // {
-        //     if (navigator.languages != undefined) 
-        //     return navigator.languages[0]; 
-        //     else 
-        //     return navigator.language;
-        // }
-        // const lang=getLang();
-        // const elementsValidations=[{id:'name',message_en:'name in en',message_nl:'name in nl'},{id:'companyName',message_en:'companyName in en',message_nl:'companyName in nl'}];
-        // elementsValidations.map((e)=>{
-        //     var ele=document.getElementById(e.id);
-        //     ele.setCustomValidity(e[`message_${lang}`]);
-        // })
+        function onSuccess() {
+            window.scrollTo(0,0)
+            var form=$('#form');
+            form.trigger("reset");
+            form.removeClass("was-validated");
+            $('#submitBtn').prop('disabled', false);
+            $('#page-parent').addClass('d-none');
+            $('#success-message-parent').removeClass('d-none');
+        }
+        function onError() {
+            $('#submitBtn').prop('disabled', false);
+        }
     </script>
 </body>
 

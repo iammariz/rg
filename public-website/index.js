@@ -1,5 +1,14 @@
 const websiteHome = `
 <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+<div class="alert alert-dismissible text-center cookiealert" role="alert">
+  <div class="cookiealert-container">
+     Rotterdam.nl gebruikt cookies om de website gebruiksvriendelijker te maken.  <a href="cookies.html" target="_blank">Lees meer over deze cookies</a>
+
+      <button type="button" class="btn btn-primary btn-sm acceptcookies" aria-label="Close">
+      Sluiten
+      </button>
+  </div>
+</div>
     <div class="site-wrap">
         <div class="site-mobile-menu site-navbar-target">
             <div class="site-mobile-menu-header">
@@ -13,14 +22,12 @@ const websiteHome = `
                 <div class="row">
                     <div class="col-8 text-left">
                         <ul class="social-media">
-                            <li>
-                                <a href="https://www.facebook.com/Atencionapp" class="p-2" target="_blank"><img
-                                        src="./public-website/images/facebook.svg" alt="Facebook"></a>
-                            </li>
-                            <li>
-                                <a href="https://twitter.com/atencionapp" class="p-2" target="_blank"><img
-                                        src="./public-website/images/twitter.svg" alt="Twitter"></a>
-                            </li>
+                        <li>
+                        <a href="https://www.facebook.com/recreatiegemak" class="p-2" target="_blank"><img src="./public-website/images/facebook.svg" alt="Facebook"></a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/recreatiegemak" class="p-2" target="_blank"><img src="./public-website/images/twitter.svg" alt="Twitter"></a>
+                    </li>
                         </ul>
                     </div>
                 </div>
@@ -65,12 +72,11 @@ const websiteHome = `
             data-aos="fade">
             <div class="container">
                 <div class="row header-text">
-                    <div class="col-md-7" data-aos="fade-up" data-aos-delay="400">
+                    <div class="col-md-6" data-aos="fade-up" data-aos-delay="400">
                     <h1>OPTIMALE SERVICE, MEER OMZET & LAGERE KOSTEN</h1>
                     <p>Recreatiegemak versterkt de gastvrijheidsbeleving in de verblijfsrecreatiesector.</p>
-                    <p>Met de webapp van Recreatiegemak maakt u het contact met uw gasten persoonlijker en
-                        gemakkelijker. Waarmee u tijd & middelen bespaart, en zowel uw gasttevredenheid als
-                        uw omzet verhoogt.
+                    <p>Met de webapp van Recreatiegemak maakt u het contact met uw gasten gemakkelijker en servicegerichter. 
+                       Waarmee u tijd & middelen bespaart, en zowel uw gasttevredenheid als uw omzet verhoogt.
                     </p>
                     <p>Op basis van innovatieve en betrouwbare webtechnologie waarbij optimale gebruiksvriendelijkheid, flexibiliteit en real-time aanpasbaarheid van uw content centraal staan.
                     </p>
@@ -304,7 +310,7 @@ const websiteHome = `
                     <img src="public-website/images/handshake.svg" alt="Image" class="img-fluid mb-4" data-aos="fade"
                         data-aos-delay="200">
                     <h4>2. Introductie</h4>
-                    <p class="text-left p-mremove">Tijdens een persoonlijk gesprek (op uw locatie of via videobellen)
+                    <p class="text-left p-mremove">Tijdens een persoonlijk gesprek (op uw locatie of 'online' via videobellen)
                         bespreken we uw wensen & vragen, en laten we zien hoe onze producten van waarde kunnen zijn in
                         uw specifieke situatie.
                         Wanneer u overtuigd bent van de meerwaarde van Recreatiegemak, ontvangt u van ons een voorstel
@@ -315,10 +321,8 @@ const websiteHome = `
                     <img src="public-website/images/implementation.svg" alt="Image" class="img-fluid mb-4" data-aos="fade"
                         data-aos-delay="300">
                     <h4>3. Implementatie</h4>
-                    <p class="text-left p-mremove">Nadat wij de implementatie zoveel als mogelijk op afstand hebben
-                        voorbereid, ronden we die af bij u op locatie.
-                        Vanzelfsprekend nemen we dan voldoende tijd voor een goede kennisoverdracht zodat u de
-                        Recreatiegemak-producten met vertrouwen kunt gaan gebruiken.
+                    <p class="text-left p-mremove">Nadat wij de implementatie grotendeels 'op afstand' in ons systeem uitvoeren, ronden we die in samenspraak met u 'online' of bij u op locatie af.
+                        Vanzelfsprekend nemen we dan voldoende tijd voor een goede kennisoverdracht zodat u de Recreatiegemak-producten met vertrouwen kunt gaan gebruiken.
                     </p>
                 </div>
             </div>
@@ -347,11 +351,11 @@ const websiteHome = `
                             </div>
                         </div>
                         <div class="col-md-6 col-lg-3 mb-5 mb-lg-0">
-                            <h2 class="footer-heading mb-4">Sociale media</h2>
-                            <div class="mb-2"> <a href="https://www.facebook.com/Atencionapp" target="_blank"><img src="./public-website/images/fb.svg"
+                        <h2 class="footer-heading mb-4">Sociale media</h2>
+                        <div class="mb-2"> <a href="https://www.facebook.com/recreatiegemak" target="_blank"><img src="./public-website/images/fb.svg"
                             alt="Facebook" class="pr-3 fb">Facebook</br></a> </div>
-                            <div class="mb-2">  <a href="https://twitter.com/atencionapp" target="_blank"><img src="./public-website/images/twitter.svg" alt="Twitter" class="pr-3 tw">Twitter</br></a></div>
-                        </div>
+                            <div class="mb-2">  <a href="https://twitter.com/recreatiegemak" target="_blank"><img src="./public-website/images/twitter.svg" alt="Twitter" class="pr-3 tw">Twitter</br></a></div>
+                    </div>
                         <div class="col-md-6 col-lg-3 mb-lg-0">
                             <h2 class="footer-heading mb-4">Voorwaarden</h2>
                             <ul class="list-unstyled">
@@ -368,9 +372,7 @@ const websiteHome = `
             <div class="row mt-5 text-center">
                 <div class="col-md-12">
                     <div class="border-top pt-5">
-                        <p>Copyright &copy; <script>
-                                document.write(new Date().getFullYear());
-                            </script> Recreatiegemak</a></p>
+                        <p>Copyright &copy; ${new Date().getFullYear()} Recreatiegemak</a></p>
                     </div>
                 </div>
             </div>
@@ -389,8 +391,9 @@ const websiteHomePageHead = `<head><title>Recreatiegemak</title>
 <link rel="stylesheet" href="./public-website/css/jquery.fancybox.min.css">
 <link rel="stylesheet" href="./public-website/css/aos.css">
 <link rel="stylesheet" href="./public-website/css/style.css">
+<link rel="stylesheet" href="./public-website/css/cookiealert.css">
 <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-147183184-1"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-X5GY1L38PN"></script>
 <script>
     window.dataLayer = window.dataLayer || [];
 
@@ -398,7 +401,7 @@ const websiteHomePageHead = `<head><title>Recreatiegemak</title>
         dataLayer.push(arguments);
     }
     gtag('js', new Date());
-    gtag('config', 'UA-147183184-1');
+    gtag('config', 'G-X5GY1L38PN');
 </script></head>`;
 const websiteHomePageScript = `<script src="public-website/js/jquery-3.3.1.min.js"></script>
 <script src="public-website/js/jquery-migrate-3.0.1.min.js"></script>
@@ -415,4 +418,5 @@ const websiteHomePageScript = `<script src="public-website/js/jquery-3.3.1.min.j
 <script src="public-website/js/jquery.sticky.js"></script>
 <script src="public-website/js/main.js"></script>
 <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src="public-website/js/cookiealert.js"></script>
 <script src="public-website/js/index.js"></script>`;

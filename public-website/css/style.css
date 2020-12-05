@@ -765,14 +765,14 @@ h3 {
     }
 }
 
-.site-blocks-cover p {
+.site-blocks-cover p, #success-msg {
     color: white;
     font-size: 1.30rem;
     line-height: 1.5;
     font-weight: 300;
 }
 @media (max-width: 991.98px) {
-    .site-blocks-cover p {
+    .site-blocks-cover p, #success-msg {
         font-size: 1rem;
     }
 }
@@ -1206,4 +1206,18 @@ h3 {
 
 .cms-portal i {
     margin-top: 5px;
+}
+
+
+/* Cookies */
+
+.cookiealert-container a {
+    color: #fff;
+}
+.cookiealert-container a:hover {
+    color: #00a79d;
+}
+
+.cookiealert-container .btn {
+    padding: 5px 25px;
 }
